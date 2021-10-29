@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    
+    <!-- section for logo, login, and openhours -->
+    <section id="top">
+        <a href="Index.html"><img id="logo" src="Images/Logo.jpg" alt="Bibliotek-logo"></a>
+        <ul>
+            <li id="opening-hours"><a href="Aabningstider.html">Åbningstider</a></li>        
+            <li id="login"><a href="Login.html">Log in</a></li>    </ul>
+    </section>
+    <!-- navigation menu -->
+    <nav>
+        <ul id="pc-size">
+                <li><a href="#">Arrangementer</a>
+                <ul>
+                    <li><a href="Events.html">Det sker hver uge/måned</a></li>
+                </ul></li>
+                <li><a href="#">Inspiration</a>
+                    <ul>
+                        <li><a href="Anbefalinger.html">Anbefalinger</a></li>
+                    </ul></li>
+                    <li><a href="Vi_tilbyder.html">Vi tilbyder</a></li>
+                    <li><a href="boern_og_foraeldre.html">Børn & Forældre</a></li>
+                <li><a href="#">Info</a>
+                    <ul>
+                        <li><a href="#">Item</a></li>
+                    </ul></li>      
+        </ul>
+        <input id="check" type="checkbox">
+        <label for="check">
+        <img id="mobil-size" src="Images/menu.png" alt="menu-logo"></label>
+        <ul id="dropdown">
+            <li><a href="#">Arrangementer</a>
+                <ul>
+                    <li><a href="Events.html">Det sker hver uge/måned</a></li>
+                </ul></li>
+            <li><a href="#">Inspiration</a>
+                <ul>
+                    <li><a href="#">Item</a></li>
+                </ul></li>
+                <li><a href="Vi_tilbyder.html">Vi tilbyder</a></li>
+                <li><a href="boern_og_foraeldre.html">Børn & Forældre</a></li>
+            <li><a href="#">Info</a></li>    
+        </ul> <section id="search-container">
+            <input type="search" placeholder="Søg....">
+        </section>
+    </nav>
+    <header>
+        <article>
+            <h1>Velkommen til dit Bibliotek!</h1>
+            <p>her kan du finde stort set alle bøger, åbningstider, events, og meget mere ! Vi tilbyder også Lorem ipsum dolor sit amet, consectetur voluptate adipisicing elit. Consequatur ducimus incidunt in asperiores esse molestias illo laborum, qui ratione beatae est repellendus dolor? Tempora atque, omnis accusantium pariatur incidunt eaque. Lorem ipsum dolor, sit amet voluptate consectetur adipisicing elit. Enim deleniti sequi, quo perspiciatis autem tenetur neque ab ipsum officia, consequatur a alias, dolor exercitationem reiciendis voluptate accusamus soluta? Recusandae, quo!
+                P.S Husk at tjekke vores nye Adult sektion ud.
+            </p>
+        </article>
+      
+       
+        <section class="slideshow-container">
+        <figure class="mySlides fade">
+            <img src="Images/books1.jpg" alt="books"></figure>
+            <figure class="mySlides fade">
+                <img src="Images/books2.jpg" alt="books"></figure>
+                <figure class="mySlides fade">
+                    <img src="Images/books3.jpg" alt="books"></figure>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div></section></header>
+      <main>
+    <section id="main-container-grid">
+        <figure id="figure-1"><img src="Images/books4.jpg" alt="">
+        <figcaption><h2>Faglitteratur</h2>
+            <p>Vi har idag fået en nu samling af faglitteratur hjem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam veritatis, ex maiores nihil saepe magni iste laudantium suscipit sunt odit perspiciatis quam, sit libero possimus aut mollitia omnis. Delectus, inventore!</p></figcaption></figcaption>
+    </figure>
+    <figure id="figure-2"><img src="Images/books5.jpg" alt="">
+        <figcaption>
+            <h2>Skønlitteratur</h2>
+            <p>Vi har idag fået en nu samling af skønlitteratur hjem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam veritatis, ex maiores nihil saepe magni iste laudantium suscipit sunt odit perspiciatis quam, sit libero possimus aut mollitia omnis. Delectus, inventore!</p></figcaption>
+    </figure>
+    <figure id="figure-3"><img src="Images/books6.jpg" alt="">
+        <figcaption> <h2>Børnelitteratur</h2>
+            <p>Vi har idag fået en nu samling af børnelitteratur hjem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam veritatis, ex maiores nihil saepe magni iste laudantium suscipit sunt odit perspiciatis quam, sit libero possimus aut mollitia omnis. Delectus, inventore!</p></figcaption></figcaption>
+    </figure>
+    </section>
+</main>
+<section >
+<iframe id="map" src="https://maps.google.com/maps?q=aalborg&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe></section>
+    <footer>
+    <section id="mid-footer"> <div><h3>Find os i Aalborg og på de sociale platforms</h3>
+        <p>Eller se vores kontakt information under info</p></div></section>
+    <section id="bottom-footer-grid">
+        <img id="logo1" src="Images/facebook.png" alt="facebook">
+        <img id="logo2" src="Images/twitter.png" alt="twitter">
+    <img id="logo3" src="Images/youtube.png" alt="youtube">
+    <img id="logo4" src="Images/instagram.png" alt="instagram">
+</section>
+<section id="end-footer"></section></footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>

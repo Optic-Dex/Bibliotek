@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Log ind</title>
+</head>
+<body>
+      <!-- section for logo, login, and openhours -->
+      <section id="top">
+        <a href="Index.html"><img id="logo" src="Images/Logo.jpg" alt="Bibliotek-logo"></a>        <ul>
+            <li id="opening-hours"><a href="Aabningstider.html">Åbningstider</a></li>
+            <li id="login"><a href="Login.html">Log in</a></li>    </ul>
+    </section>
+    
+    <!-- navigation menu -->
+    <nav>
+        <ul id="pc-size">
+                <li><a href="#">Arrangementer</a>
+                <ul>
+                    <li><a href="Events.html">Det sker hver uge/måned</a></li>
+                </ul></li>
+                <li><a href="#">Inspiration</a>
+                    <ul>
+                        <li><a href="Anbefalinger.html">Anbefalinger</a></li>
+                    </ul></li>
+                    <li><a href="Vi_tilbyder.html">Vi tilbyder</a></li>
+                    <li><a href="boern_og_foraeldre.html">Børn & Forældre</a></li>
+                <li><a href="#">Info</a>
+                    <ul>
+                        <li><a href="#">Item</a></li>
+                    </ul></li>      
+        </ul>
+        <input id="check" type="checkbox">
+        <label for="check">
+        <img id="mobil-size" src="Images/menu.png" alt="menu-logo"></label>
+        <ul id="dropdown">
+            <li><a href="#">Arrangementer</a>
+                <ul>
+                    <li><a href="Events.html">Det sker hver uge/måned</a></li>
+                </ul></li>
+            <li><a href="#">Inspiration</a>
+                <ul>
+                    <li><a href="Anbefalinger.html">Anbefalinger</a></li>
+                </ul></li>
+                <li><a href="Vi_tilbyder.html">Vi tilbyder</a></li>
+                <li><a href="boern_og_foraeldre.html">Børn & Forældre</a></li>
+            <li><a href="#">Info</a></li>    
+        </ul> <section id="search-container">
+            <input type="search" placeholder="Søg....">
+        </section>
+    </nav>
+       <section>
+          
+            <fieldset id="loginform">
+             <legend>Log ind:</legend>
+             <label for="bname">Brugernavn: </label>
+             <input type="text" id="bname" name="bname" required><br><br>
+             <label for="password">Password: </label>
+             <input type="password" id="password" name="password" required><br><br>
+             <input type="submit" value="Log ind" onclick="login()"> 
+             <input type="submit" value="Opret Bruger" onclick="create_user()">
+            </fieldset>
+        
+       </section>
+    <footer>
+        <section id="mid-footer"> <div><h3>Find os i Aalborg og på de sociale platforms</h3>
+            <p>Eller se vores kontakt information under info</p></div></section>
+        <section id="bottom-footer-grid">
+            <img id="logo1" src="Images/facebook.png" alt="facebook">
+            <img id="logo2" src="Images/twitter.png" alt="twitter">
+        <img id="logo3" src="Images/youtube.png" alt="youtube">
+        <img id="logo4" src="Images/instagram.png" alt="instagram">
+    </section>
+    <section id="end-footer"></section></footer>
+    <script src="JS/login.js"></script>
+</body>
+</html>

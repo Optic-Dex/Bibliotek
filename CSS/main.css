@@ -1,0 +1,218 @@
+@import url('footer.css');
+@import url('nav.css');
+@import url('grid.css');
+@import url('pictureslider.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+    --main-body-color: rgb(241,241,241);
+    --green-color: #59a52c;
+    --darkgreen-color: #03440C;
+    --extremgreen-color: #0E402D;
+    --lightgreen-color: #6fca3a;
+    --lightgreen-op-color: #6fca3ae5;
+    --p-pc-size: clamp(0.5rem, 1vw + 1rem, 2rem);
+    --h1-pc-size: clamp(2.2rem, 4vw + 1rem, 10rem);
+    --h2-pc-size: clamp(1.1rem, 2vw + 1rem, 6rem);
+    --h3-pc-size: clamp(0.9rem, 1.9vw + 1rem, 4rem);
+    --h4-pc-size: clamp(0.7rem, 1.7vw + 1rem, 2.5rem);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans'
+}
+
+main figure {
+    padding: 0;
+    margin: 0
+}
+
+html {
+    font-size: 62.5%;
+  }
+body {
+    max-width: 1920px;
+    background-color: var(--main-body-color);
+
+}
+h4 {
+    font-size: var(--h4-pc-size);
+}
+h3 {
+    font-size: var(--h3-pc-size);
+    
+}
+h2 {
+    font-size: var(--h2-pc-size);
+    margin: 2vw 0;
+}
+h1 {
+    font-size: var(--h1-pc-size);
+}
+p {
+    font-size: var(--p-pc-size);
+}
+#top {
+    position: relative;
+    max-width: 1630px;
+    margin: 0 auto;
+    
+}
+
+#logo{
+    width: clamp(16rem, 30vw + 1rem, 50rem);
+}
+#top ul {
+    position:absolute;
+    right: clamp(0rem, 4vw + 1rem, 7.5rem);
+    bottom: -3px;
+}
+#top li {
+    
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    border: 2px var(--green-color) solid;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: var(--p-pc-size);
+    width: fit-content;
+}
+#top a {
+    text-decoration: none;
+    color: black;
+}
+
+#open {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+#search-container {
+    max-width: 1630px;
+    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+input[type=search]{
+   width: 75%;
+   height: clamp(2rem , 4vw + 1rem, 5rem);
+   background-color: var(--main-body-color);
+   border: 3px solid var(--green-color);
+   border-radius: 20px;
+   font-size: var(--p-pc-size);
+   text-align: center;
+}
+input[type=search]::placeholder {
+    color: black;
+    text-align: center;
+    font-size: var(--p-pc-size);
+   
+}
+#loginform, #brugerprofil {
+    padding: 2vw 0;
+    text-align: center;
+    margin: auto;
+    width: 20vw;
+    
+}
+#loginform input {
+    float: right;
+    margin-right: 1vw;
+}
+#brugerprofil input{
+    float: right;
+    background-color: var(--main-body-color);
+    text-align: center;
+    margin-right: 1vw;
+}
+fieldset {
+    padding: 2vw;
+    font-size: var(--p-pc-size);
+    border: 3px solid var(--green-color);
+    border-radius: 15px 50px;
+}
+input[type=submit] {
+    padding: 0 1vw;
+    font-size: var(--p-pc-size);
+    border: 2px solid var(--green-color);
+    border-radius: 15px 50px;
+}
+input[type=search]::-webkit-search-cancel-button {
+  /* husk at ændre det her  */
+}
+
+header article{
+    border: 5px solid var(--green-color);
+    border-radius: 15px 50px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+main {
+    background-color: var(--green-color);
+    
+}
+#main-container-grid {
+    
+    margin-top: 1rem;
+    padding: 4rem 0;
+    text-align: center;
+}
+#main-container-grid img {
+ width: 100%;
+}
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+main figcaption {
+    border: 3px solid black;
+    border-radius: 15px 50px;
+    padding:1vw;
+}
+#subpage1-grid img, #subpage2-grid img, #subpage3-grid img, #subpage4-grid img {
+    width: 100%;
+ 
+}
+#subpage4-grid img {
+    height: 100%;
+}
+#subpage4-icon {
+    margin-top: 1vw;
+}
+#subpage1-grid, #subpage2-grid, #subpage3-grid, #subpage4-grid {
+    margin-bottom: 4vw;
+}
+#subpage1-grid article, #subpage1-grid figcaption, #subpage2-grid article, #subpage2-grid figcaption, #subpage3-grid article, #subpage3-grid figcaption, #subpage4-grid article, #subpage4-grid figcaption {
+    text-align: center;
+}
+
+#subpage4-grid figure {
+ position: relative;
+ overflow: hidden;
+}
+#subpage4-grid figcaption {
+    position: absolute;
+    background-color: var(--lightgreen-op-color);
+    top: 94%;
+    padding: 0 1vw;
+    transition: 300ms ease-in-out;
+}
+#subpage4-grid figure:hover figcaption {
+    top: 50%;
+    bottom: 0;
+}
+@media screen and (max-width: 680px) {
+    #map {
+        height: 250px;
+    }
+#logo {
+    width: clamp(16rem, 25vw + 1rem, 25rem);
+}
+#search-container {
+    padding: 0;
+}
+}
+

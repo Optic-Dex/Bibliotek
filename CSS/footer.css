@@ -1,0 +1,41 @@
+
+footer {
+    margin-top: 2vw;
+    text-align: center;
+    max-width: 1920px;  
+}
+footer h3, footer p {
+    margin: 0;
+}
+#mid-footer {
+    padding: 2vw 0;
+    background-color: var(--lightgreen-color);
+}
+#mid-footer div{
+    padding: 2vw;
+    margin: auto auto;
+    width: fit-content;
+    border: 3px solid black;
+    border-radius: 15px 50px;
+}
+#bottom-footer-grid {
+    padding: 2vw 0;
+    background-color: var(--green-color);
+}
+#end-footer {
+    background-color: var(--lightgreen-color);
+    height: 3vw;
+}
+footer img {
+    margin: auto auto;
+    display: block;
+    width: 20%;
+}
+
+@media screen and (max-width: 680px) {
+
+    footer img { 
+        width: 50%;
+    }
+    
+}
